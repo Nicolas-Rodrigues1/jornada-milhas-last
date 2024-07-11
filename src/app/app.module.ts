@@ -7,16 +7,13 @@ import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AutenticacaoInterceptor } from './autenticacao/autenticacao.interceptor';
-import { BuscaComponent } from './pages/busca/busca.component';
 import { SharedModule } from './shared/shared.module';
 import { MaterialModule } from './core/material/material.module';
 import { HomeModule } from './home/home.module';
-import { AutenticacaoModule } from './autenticacao/autenticacao.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    BuscaComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +21,6 @@ import { AutenticacaoModule } from './autenticacao/autenticacao.module';
     SharedModule,
     MaterialModule,
     HomeModule,
-    AutenticacaoModule,
     BrowserAnimationsModule,
     HttpClientModule,
     ReactiveFormsModule,

@@ -1,33 +1,19 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
-import { LoginComponent } from './autenticacao/login/login.component';
-import { CadastroComponent } from './autenticacao/cadastro/cadastro.component';
-import { PerfilComponent } from './autenticacao/perfil/perfil.component';
-import { authGuard } from './autenticacao/auth.guard';
-import { BuscaComponent } from './pages/busca/busca.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent
+    redirectTo: '/home',
+    pathMatch: 'full'
   },
   {
-    path: 'login',
-    component: LoginComponent
+    path:'auth',
+    loadChildren: () => import('./autenticacao/autenticacao.module').then(m => m.AutenticacaoModule)
   },
   {
-    path: 'cadastro',
-    component: CadastroComponent
-  },
-  {
-    path: 'perfil',
-    component: PerfilComponent,
-    canActivate: [authGuard]
-  },
-  {
-    path: 'busca',
-    component: BuscaComponent
+    path:'busca',
+    loadChildren: () => import('./pages/busca/busca.module').then(m => m.BuscaModule)
   }
 ];
 

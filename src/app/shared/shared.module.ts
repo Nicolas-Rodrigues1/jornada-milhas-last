@@ -11,16 +11,9 @@ import { ContainerComponent } from "./container/container.component";
 import { DropdownUfComponent } from "./dropdown-uf/dropdown-uf.component";
 import { FooterComponent } from "./footer/footer.component";
 import { FormBaseComponent } from "./form-base/form-base.component";
-import { CompanhiasComponent } from "./form-busca/filtros-complementares/companhias/companhias.component";
-import { FiltrosComplementaresComponent } from "./form-busca/filtros-complementares/filtros-complementares.component";
-import { LabelComponent } from "./form-busca/filtros-complementares/label/label.component";
-import { ParadasComponent } from "./form-busca/filtros-complementares/paradas/paradas.component";
-import { PrecosComponent } from "./form-busca/filtros-complementares/precos/precos.component";
 import { FormBuscaComponent } from "./form-busca/form-busca.component";
 import { HeaderComponent } from "./header/header.component";
 import { ModalComponent } from "./modal/modal.component";
-import { PassagemDestaqueComponent } from "./passagem-destaque/passagem-destaque.component";
-import { PassagemComponent } from "./passagem/passagem.component";
 import { SeletorPassageiroComponent } from "./seletor-passageiro/seletor-passageiro.component";
 import { MaterialModule } from "../core/material/material.module";
 
@@ -38,14 +31,7 @@ import { MaterialModule } from "../core/material/material.module";
         BotaoControleComponent,
         DropdownUfComponent,
         SeletorPassageiroComponent,
-        FormBaseComponent,
-        PassagemComponent,
-        ParadasComponent,
-        CompanhiasComponent,
-        PrecosComponent,
-        LabelComponent,
-        FiltrosComplementaresComponent,
-        PassagemDestaqueComponent
+        FormBaseComponent
     ],
     imports:[
         CommonModule,
@@ -65,14 +51,7 @@ import { MaterialModule } from "../core/material/material.module";
         BotaoControleComponent,
         DropdownUfComponent,
         SeletorPassageiroComponent,
-        FormBaseComponent,
-        PassagemComponent,
-        ParadasComponent,
-        CompanhiasComponent,
-        PrecosComponent,
-        LabelComponent,
-        FiltrosComplementaresComponent,
-        PassagemDestaqueComponent
+        FormBaseComponent
     ]
 })
 
