@@ -13,7 +13,7 @@ const routes: Routes = [
   },
   {
     path:'busca',
-    loadChildren: () => import('./pages/busca/busca.module').then(m => m.BuscaModule)
+    loadChildren: () => import('./busca/busca.module').then(m => m.BuscaModule)
   }
 ];
 
