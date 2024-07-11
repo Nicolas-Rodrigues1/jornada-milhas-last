@@ -3,7 +3,7 @@ import { FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { CadastroService } from 'src/app/core/services/cadastro.service';
 import { FormularioService } from 'src/app/core/services/formulario.service';
-import { TokenService } from 'src/app/core/services/token.service';
+import { TokenService } from 'src/app/autenticacao/services/token.service';
 import { UserService } from 'src/app/core/services/user.service';
 import { PessoaUsuaria } from 'src/app/core/types/type';
 
