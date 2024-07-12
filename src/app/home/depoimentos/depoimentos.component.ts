@@ -16,6 +16,6 @@ export class DepoimentosComponent {
       res => {
         this.depoimentos = res;
       }
-    )
+    );
   }
 }

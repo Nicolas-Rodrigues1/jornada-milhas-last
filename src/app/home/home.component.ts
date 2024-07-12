@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { PromocaoService } from './services/promocao.service';
@@ -20,7 +22,7 @@ export class HomeComponent implements OnInit {
         resposta => {
           // console.log(resposta)
         }
-      )
+      );
   }
   navegarParaBusca(ev: any) {
     this.router.navigate(['busca']);
